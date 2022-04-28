@@ -10,7 +10,7 @@ def plot_consumption(agregado, app):
     plt.show()
 
 
-def plot_multi_app_consumption(app1, app2):
+def plot_multi_app_consumption(app1, app2, path):
     plt.subplots(figsize=(16, 10))
     plt.subplot(211)
     plt.title('Consumo Elétrico - Real')
@@ -28,4 +28,6 @@ def plot_multi_app_consumption(app1, app2):
     plt.plot(app2, label='Appliance')
     plt.legend()
 
-    plt.show()
+    plt.savefig(path, format='png', dpi=450)
+    plt.clf()
+    plt.close()
