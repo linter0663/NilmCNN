@@ -20,6 +20,7 @@ def get_args():
     parser.add_argument('--input_size', nargs='?', const=1440, type=int, default=1440)
     parser.add_argument('--bias', action='store_true')
     parser.add_argument('--save', action='store_true')
+    parser.add_argument('--shuffle', action='store_true')
     parser.add_argument('--input_path', type=str, help='Path to input file.')
     parser.add_argument('--log_path', type=str, help='Path for TensorBoard log file.')
 
